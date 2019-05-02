@@ -1,0 +1,1318 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+
+		<style>
+			table {
+				border-collapse: collapse;
+			}
+
+			table, th, td {
+				border: 1px solid black;
+				padding:5px;
+				text-align:center;
+			}
+		</style>
+	</head>
+
+	<body onLoad="timerCountDown();">
+		<div class="container">
+		<!--- Section 1 : Verification --->
+		<section id="sec1">
+			<form class="form-horizontal text-center ">
+				<fieldset>
+
+				<!-- Form Name -->
+				<legend>Section 1 Verification</legend>
+
+				<!-- Multiple Radios (inline) -->
+				<div class="form-group">
+				  <label class="col-md-6 control-label" for="verification_1">I and/or my colleagues know where to get information to help us analyse the business case for consciously attracting people with disabilities as members</label>
+				  <div class="col-md-6">
+					<label class="radio-inline" for="verification_1-0">
+					  <input type="radio" name="00-0" id="verification_1-0" value="1" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec2').style.display='initial';
+																													}">
+					  1
+					</label>
+					<label class="radio-inline" for="verification_1-1">
+					  <input type="radio" name="00-0" id="verification_1-1" value="2" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec2').style.display='initial';
+																													}">
+					  2
+					</label>
+					<label class="radio-inline" for="verification_1-2">
+					  <input type="radio" name="00-0" id="verification_1-2" value="3" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec2').style.display='initial';
+																													}">
+					  3
+					</label>
+					<label class="radio-inline" for="verification_1-3">
+					  <input type="radio" name="00-0" id="verification_1-3" value="4" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec2').style.display='initial';
+																													}">
+					  4
+					</label>
+					<label class="radio-inline" for="verification_1-4">
+					  <input type="radio" name="00-0" id="verification_1-4" value="5" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec2').style.display='initial';
+																													}">
+					  5
+					</label>
+				  </div>
+				</div>
+
+				<!-- Multiple Radios (inline) -->
+				<div class="form-group">
+				  <label class="col-md-6 control-label" for="verification_2">I/my colleagues have researched the scope for increasing the participation of the broader community, in particular people with disabilities  </label>
+				  <div class="col-md-6">
+					<label class="radio-inline" for="verification_2-0">
+					  <input type="radio" name="00-1" id="verification_2-0" value="1" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec2').style.display='initial';
+																													}">
+					  1
+					</label>
+					<label class="radio-inline" for="verification_2-1">
+					  <input type="radio" name="00-1" id="verification_2-1" value="2" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec2').style.display='initial';
+																													}">
+					  2
+					</label>
+					<label class="radio-inline" for="verification_2-2">
+					  <input type="radio" name="00-1" id="verification_2-2" value="3" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec2').style.display='initial';
+																													}">
+					  3
+					</label>
+					<label class="radio-inline" for="verification_2-3">
+					  <input type="radio" name="00-1" id="verification_2-3" value="4" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec2').style.display='initial';
+																													}">
+					  4
+					</label>
+					<label class="radio-inline" for="verification_2-4">
+					  <input type="radio" name="00-1" id="verification_2-4" value="5" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec2').style.display='initial';
+																													}">
+					  5
+					</label>
+				  </div>
+				</div>
+
+				<!-- Multiple Radios (inline) -->
+				<div class="form-group">
+				  <label class="col-md-6 control-label" for="verification_3">I know of disability service providers that I could link with in the local community</label>
+				  <div class="col-md-6">
+					<label class="radio-inline" for="verification_3-0">
+					  <input type="radio" name="00-2" id="verification_3-0" value="1" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec2').style.display='initial';
+																													}">
+					  1
+					</label>
+					<label class="radio-inline" for="verification_3-1">
+					  <input type="radio" name="00-2" id="verification_3-1" value="2" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec2').style.display='initial';
+																													}">
+					  2
+					</label>
+					<label class="radio-inline" for="verification_3-2">
+					  <input type="radio" name="00-2" id="verification_3-2" value="3" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec2').style.display='initial';
+																													}">
+					  3
+					</label>
+					<label class="radio-inline" for="verification_3-3">
+					  <input type="radio" name="00-2" id="verification_3-3" value="4" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec2').style.display='initial';
+																													}">
+					  4
+					</label>
+					<label class="radio-inline" for="verification_3-4">
+					  <input type="radio" name="00-2" id="verification_3-4" value="5" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec2').style.display='initial';
+																													}">
+					  5
+					</label>
+				  </div>
+				</div>
+
+				<!-- Multiple Radios (inline) -->
+				<div class="form-group">
+				  <label class="col-md-6 control-label" for="verification_4">My colleagues and I inclusivize our services to provide for people with disabilities </label>
+				  <div class="col-md-6">
+					<label class="radio-inline" for="verification_4-0">
+					  <input type="radio" name="00-3" id="verification_4-0" value="1" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec2').style.display='initial';
+																													}">
+					  1
+					</label>
+					<label class="radio-inline" for="verification_4-1">
+					  <input type="radio" name="00-3" id="verification_4-1" value="2" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec2').style.display='initial';
+																													}">
+					  2
+					</label>
+					<label class="radio-inline" for="verification_4-2">
+					  <input type="radio" name="00-3" id="verification_4-2" value="3" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec2').style.display='initial';
+																													}">
+					  3
+					</label>
+					<label class="radio-inline" for="verification_4-3">
+					  <input type="radio" name="00-3" id="verification_4-3" value="4" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec2').style.display='initial';
+																													}">
+					  4
+					</label>
+					<label class="radio-inline" for="verification_4-4">
+					  <input type="radio" name="00-3" id="verification_4-4" value="5" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec2').style.display='initial';
+																													}">
+					  5
+					</label>
+				  </div>
+				</div>
+
+				</fieldset>
+			</form>
+		</seciton>
+
+			<section id="sec2" style="display:none">
+			<form class="form-horizontal  text-center">
+				<fieldset>
+
+				<!-- Form Name -->
+				<legend>Section 2: Value Proposition </legend>
+
+				<!-- Multiple Radios (inline) -->
+				<div class="form-group">
+				  <label class="col-md-6 control-label" for="value_prososition_1">My colleagues and I have a significant contribution to make to the quality of life of people in our community, including people with disabilities</label>
+				  <div class="col-md-6">
+					<label class="radio-inline" for="value_prososition_1-0">
+					  <input type="radio" name="01-0" id="value_prososition_1-0" value="1" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec3').style.display='initial';
+																													}">
+					  1
+					</label>
+					<label class="radio-inline" for="value_prososition_1-1">
+					  <input type="radio" name="01-0" id="value_prososition_1-1" value="2" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec3').style.display='initial';
+																													}">
+					  2
+					</label>
+					<label class="radio-inline" for="value_prososition_1-2">
+					  <input type="radio" name="01-0" id="value_prososition_1-2" value="3" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec3').style.display='initial';
+																													}">
+					  3
+					</label>
+					<label class="radio-inline" for="value_prososition_1-3">
+					  <input type="radio" name="01-0" id="value_prososition_1-3" value="4" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec3').style.display='initial';
+																													}">
+					  4
+					</label>
+					<label class="radio-inline" for="value_prososition_1-4">
+					  <input type="radio" name="01-0" id="value_prososition_1-4" value="5" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec3').style.display='initial';
+																													}">
+					  5
+					</label>
+				  </div>
+				</div>
+
+				<!-- Multiple Radios (inline) -->
+				<div class="form-group">
+				  <label class="col-md-6 control-label" for="value_proposition_2">My colleagues and I have the scope to improve opportunities for participation in fitness activities for people living in, or visiting our community, including people with disabilities</label>
+				  <div class="col-md-6">
+					<label class="radio-inline" for="value_proposition_2-0">
+					  <input type="radio" name="01-1" id="value_proposition_2-0" value="1" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec3').style.display='initial';
+																													}">
+					  1
+					</label>
+					<label class="radio-inline" for="value_proposition_2-1">
+					  <input type="radio" name="01-1" id="value_proposition_2-1" value="2" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec3').style.display='initial';
+																													}">
+					  2
+					</label>
+					<label class="radio-inline" for="value_proposition_2-2">
+					  <input type="radio" name="01-1" id="value_proposition_2-2" value="3" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec3').style.display='initial';
+																													}">
+					  3
+					</label>
+					<label class="radio-inline" for="value_proposition_2-3">
+					  <input type="radio" name="01-1" id="value_proposition_2-3" value="4" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec3').style.display='initial';
+																													}">
+					  4
+					</label>
+					<label class="radio-inline" for="value_proposition_2-4">
+					  <input type="radio" name="01-1" id="value_proposition_2-4" value="5" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec3').style.display='initial';
+																													}">
+					  5
+					</label>
+				  </div>
+				</div>
+
+				<!-- Multiple Radios (inline) -->
+				<div class="form-group">
+				  <label class="col-md-6 control-label" for="value_proposition_3">The benefits of increasing our UniversAbility  to increase participation are clear</label>
+				  <div class="col-md-6">
+					<label class="radio-inline" for="value_proposition_3-0">
+					  <input type="radio" name="01-2" id="value_proposition_3-0" value="1" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec3').style.display='initial';
+																													}">
+					  1
+					</label>
+					<label class="radio-inline" for="value_proposition_3-1">
+					  <input type="radio" name="01-2" id="value_proposition_3-1" value="2" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec3').style.display='initial';
+																													}">
+					  2
+					</label>
+					<label class="radio-inline" for="value_proposition_3-2">
+					  <input type="radio" name="01-2" id="value_proposition_3-2" value="3" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec3').style.display='initial';
+																													}">
+					  3
+					</label>
+					<label class="radio-inline" for="value_proposition_3-3">
+					  <input type="radio" name="01-2" id="value_proposition_3-3" value="4" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec3').style.display='initial';
+																													}">
+					  4
+					</label>
+					<label class="radio-inline" for="value_proposition_3-4">
+					  <input type="radio" name="01-2" id="value_proposition_3-4" value="5" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec3').style.display='initial';
+																													}">
+					  5
+					</label>
+				  </div>
+				</div>
+
+				<!-- Multiple Radios (inline) -->
+				<div class="form-group">
+				  <label class="col-md-6 control-label" for="value_proposition_4">My colleagues and I play a major role in providing health services to the entire community, including people with disabilities</label>
+				  <div class="col-md-6">
+					<label class="radio-inline" for="value_proposition_4-0">
+					  <input type="radio" name="01-3" id="value_proposition_4-0" value="1" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec3').style.display='initial';
+																													}">
+					  1
+					</label>
+					<label class="radio-inline" for="value_proposition_4-1">
+					  <input type="radio" name="01-3" id="value_proposition_4-1" value="2" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec3').style.display='initial';
+																													}">
+					  2
+					</label>
+					<label class="radio-inline" for="value_proposition_4-2">
+					  <input type="radio" name="01-3" id="value_proposition_4-2" value="3" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec3').style.display='initial';
+																													}">
+					  3
+					</label>
+					<label class="radio-inline" for="value_proposition_4-3">
+					  <input type="radio" name="01-3" id="value_proposition_4-3" value="4" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec3').style.display='initial';
+																													}">
+					  4
+					</label>
+					<label class="radio-inline" for="value_proposition_4-4">
+					  <input type="radio" name="01-3" id="value_proposition_4-4" value="5" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec3').style.display='initial';
+																													}">
+					  5
+					</label>
+				  </div>
+				</div>
+
+				<!-- Multiple Radios (inline) -->
+				<div class="form-group">
+				  <label class="col-md-6 control-label" for="value_proposition_5 ">The UniversAbility  of our fitness services increases the job satisfaction and turnover of my staff </label>
+				  <div class="col-md-6">
+					<label class="radio-inline" for="value_proposition_5-0">
+					  <input type="radio" name="01-4" id="value_proposition_5-0" value="1" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec3').style.display='initial';
+																													}">
+					  1
+					</label>
+					<label class="radio-inline" for="value_proposition_5-1">
+					  <input type="radio" name="01-4" id="value_proposition_5-1" value="2" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec3').style.display='initial';
+																													}">
+					  2
+					</label>
+					<label class="radio-inline" for="value_proposition_5-2">
+					  <input type="radio" name="01-4" id="value_proposition_5-2" value="3" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec3').style.display='initial';
+																													}">
+					  3
+					</label>
+					<label class="radio-inline" for="value_proposition_5-3">
+					  <input type="radio" name="01-4" id="value_proposition_5-3" value="4" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec3').style.display='initial';
+																													}">
+					  4
+					</label>
+					<label class="radio-inline" for="value_proposition_5-4">
+					  <input type="radio" name="01-4" id="value_proposition_5-4" value="5" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec3').style.display='initial';
+																													}">
+					  5
+					</label>
+				  </div>
+				</div>
+
+				</fieldset>
+			</form>
+		</section>
+
+			<!--- Section 3 : Vision -->
+			<section id="sec3" style="display:none;">
+			<form class="form-horizontal  text-center">
+				<fieldset>
+
+				<!-- Form Name -->
+				<legend>Section 3: Vision</legend>
+
+				<!-- Multiple Radios (inline) -->
+				<div class="form-group">
+				  <label class="col-md-6 control-label" for="02-0">My colleagues and I envision ourselves as leaders of cultural change</label>
+				  <div class="col-md-6">
+					<label class="radio-inline" for="02-0-0">
+					  <input type="radio" name="02-0" id="02-0-0" value="1" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec4').style.display='initial';
+																													}">
+					  1
+					</label>
+					<label class="radio-inline" for="02-0-1">
+					  <input type="radio" name="02-0" id="02-0-1" value="2" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec4').style.display='initial';
+																													}">
+					  2
+					</label>
+					<label class="radio-inline" for="02-0-2">
+					  <input type="radio" name="02-0" id="02-0-2" value="3" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec4').style.display='initial';
+																													}">
+					  3
+					</label>
+					<label class="radio-inline" for="02-0-3">
+					  <input type="radio" name="02-0" id="02-0-3" value="4" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec4').style.display='initial';
+																													}">
+					  4
+					</label>
+					<label class="radio-inline" for="02-0-4">
+					  <input type="radio" name="02-0" id="02-0-4" value="5" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec4').style.display='initial';
+																													}">
+					  5
+					</label>
+				  </div>
+				</div>
+
+				<!-- Multiple Radios -->
+				<div class="form-group">
+				  <label class="col-md-10 control-label" for="02-1">Which of the following statements best describes your situation within your organisation (Please select one)</label>
+				  <div class="col-md-12 text-left">
+				  <br>
+				  <div class="radio">
+					<label for="02-1-0">
+					  <input type="radio" name="02-1" id="02-1-0" value="5" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec4').style.display='initial';
+																													}">
+					  I and/or my colleagues have identified set targets for increasing the UniversAbility  of our services and are putting strategies in place to achieve these goals (5)
+					</label>
+					</div>
+				  <div class="radio">
+					<label for="02-1-1">
+					  <input type="radio" name="02-1" id="02-1-1" value="4" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec4').style.display='initial';
+																													}">
+					  I and/or my colleagues have identified scope for increasing the UniversAbility  of our services (4)
+					</label>
+					</div>
+				  <div class="radio">
+					<label for="02-1-2">
+					  <input type="radio" name="02-1" id="02-1-2" value="3" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec4').style.display='initial';
+																													}">
+					  I THINK there may be scope for inclusivizing our services but am not sure (3)
+					</label>
+					</div>
+				  <div class="radio">
+					<label for="02-1-3">
+					  <input type="radio" name="02-1" id="02-1-3" value="2" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec4').style.display='initial';
+																													}">
+					  I have never considered inclusivizing our services until now (2)
+					</label>
+					</div>
+				  <div class="radio">
+					<label for="02-1-4">
+					  <input type="radio" name="02-1" id="02-1-4" value="1" onclick="radioOnClick(this); if(isAllChecked(this)){
+																														document.getElementById('sec4').style.display='initial';
+																													}">
+					  I don’t think inclusivizing our services, in particular for people with disabilities, is really an option for us but won’t rule it out completely until it has been fully explored (1)
+					</label>
+					</div>
+				  </div>
+				</div>
+
+				</fieldset>
+			</form>
+		</section>
+
+			<!----Section 4: Philosophy -->
+			<section id="sec4" style="display:none;">
+			<form class="form-horizontal  text-center">
+				<fieldset>
+
+				<!-- Form Name -->
+				<legend>Section 4: Philosophy </legend>
+
+				<!-- Multiple Radios (inline) -->
+				<div class="form-group">
+				  <label class="col-md-6 control-label" for="radios">1.	Does your organisation have stated ideals in your strategic plan or other management documents which relate UniversAbility  of your services?  </label>
+				  <div class="col-md-6">
+					<label class="radio-inline" for="radios-0">
+					  <input type="radio" name="03-0" id="03-0-0" value="10" onclick="radioOnClick(this); if(this.checked = 'checked'){
+																														document.getElementById('03-1').style.display='initial';
+																														document.getElementById('sec5').style.display='none';
+																													}">
+					  Yes
+					</label>
+					<label class="radio-inline" for="radios-1">
+					  <input type="radio" name="03-0" id="03-0-1" value="0" onclick="radioOnClick(this); document.getElementById('sec5').style.display='initial';
+																						document.getElementById('03-1').style.display='none';	//hide the extra answer
+																						answerArray[3][1] = 0;		//reset the score to 0
+																						var checkBoxes = document.getElementsByName('03-1');
+
+																						for(var i = 0, n = checkBoxes.length;i<n;i++){
+																							checkBoxes[i].checked = false;		//uncheck all the checkbox
+																						}">
+					  No
+					</label>
+				  </div>
+				</div>
+
+				<!-- Multiple Checkboxes (inline) -->
+				<div class="form-group" style="display:none" id="03-1">
+				  <label class="col-md-6 control-label" for="03-1">2.	Do you think an inclusive philosophy is a lived experience by:    </label>
+				  <div class="col-md-6">
+						<div class="checkbox">
+							<label class="checkbox-inline" for="03-1-0">
+							  <input type="checkbox" name="03-1" id="03-1-0" value="10" onclick="checkBoxOnClick(this); if(oneIsChecked(this)){
+																																document.getElementById('sec5').style.display='initial';
+																																}
+																																else{
+																																	document.getElementById('sec5').style.display='none'
+																																}
+																															">
+							  Management?
+							</label>
+						</div>
+
+						<div class="checkbox">
+							<label class="checkbox-inline" for="03-1-1">
+							  <input type="checkbox" name="03-1" id="03-1-1" value="10" onclick="checkBoxOnClick(this); if(oneIsChecked(this)){
+																																document.getElementById('sec5').style.display='initial';
+																																}
+																																else{
+																																	document.getElementById('sec5').style.display='none'
+																																}
+																															">
+							  Staff?
+							</label>
+						</div>
+
+						<div class="checkbox">
+							<label class="checkbox-inline" for="03-1-2">
+							  <input type="checkbox" name="03-1" id="03-1-2" value="10" onclick="checkBoxOnClick(this); if(oneIsChecked(this)){
+																																document.getElementById('sec5').style.display='initial';
+																																}
+																																else{
+																																	document.getElementById('sec5').style.display='none'
+																																}
+																															">
+							  Customers?
+							</label>
+						</div>
+				  </div>
+				</div>
+
+				</fieldset>
+				</form>
+			</section>
+
+
+				<!---Section 5 : Policy -->
+				<section id="sec5" style="display:none;">
+				<form class="form-horizontal text-center">
+					<fieldset>
+
+					<!-- Form Name -->
+					<legend>Section 5: Policy </legend>
+
+					<!-- Multiple Radios (inline) -->
+					<div class="form-group">
+					  <label class="col-md-6 control-label" for="04-0">1.	Does your charging policy account for the varied needs of your customers? E.g. No charge for personal assistants</label>
+					  <div class="col-md-6">
+					    <label class="radio-inline" for="04-0-0">
+					      <input type="radio" name="04-0" id="04-0-0" value="10" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																document.getElementById('sec6').style.display='initial';
+																															}">
+					      Yes
+					    </label>
+					    <label class="radio-inline" for="04-0-1">
+					      <input type="radio" name="04-0" id="04-0-1" value="0" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																document.getElementById('sec6').style.display='initial';
+																															}">
+					      No
+					    </label>
+					  </div>
+					</div>
+
+					<!-- Multiple Radios (inline) -->
+					<div class="form-group">
+					  <label class="col-md-6 control-label" for="04-1">2.	Do you track and monitor the proportion of your club members who experience disabilities?</label>
+					  <div class="col-md-6">
+					    <label class="radio-inline" for="04-1-0">
+					      <input type="radio" name="04-1" id="04-1-0" value="10" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																document.getElementById('sec6').style.display='initial';
+																															}">
+					      Yes
+					    </label>
+					    <label class="radio-inline" for="04-1-1">
+					      <input type="radio" name="04-1" id="04-1-1" value="0" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																document.getElementById('sec6').style.display='initial';
+																															}">
+					      No
+					    </label>
+					  </div>
+					</div>
+
+					<!-- Multiple Radios (inline) -->
+					<div class="form-group">
+						<h4>3.	Have you a budget allocated to:</h4>
+					  <label class="col-md-6 control-label" for="04-2">(a)	increasing the UniversAbility  of your services? (eg. facilities, equipment and staff training</label>
+					  <div class="col-md-6">
+					    <label class="radio-inline" for="04-2-0">
+					      <input type="radio" name="04-2" id="04-2-0" value="10" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																document.getElementById('sec6').style.display='initial';
+																															}">
+					      Yes
+					    </label>
+					    <label class="radio-inline" for="04-2-1">
+					      <input type="radio" name="04-2" id="04-2-1" value="0" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																document.getElementById('sec6').style.display='initial';
+																															}">
+					      No
+					    </label>
+					    <label class="radio-inline" for="04-2-2">
+					      <input type="radio" name="04-2" id="04-2-2" value="10" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																document.getElementById('sec6').style.display='initial';
+																															}">
+					      Not needed because  equipment is already fully accessible
+					    </label>
+					  </div>
+					</div>
+
+					<!-- Multiple Radios (inline) -->
+					<div class="form-group">
+					  <label class="col-md-6 control-label" for="04-3">(b)	increasing the UniversAbility  of your policies? </label>
+					  <div class="col-md-6">
+					    <label class="radio-inline" for="04-3-0">
+					      <input type="radio" name="04-3" id="04-3-0" value="10" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																document.getElementById('sec6').style.display='initial';
+																															}">
+					      Yes
+					    </label>
+					    <label class="radio-inline" for="04-3-1">
+					      <input type="radio" name="04-3" id="04-3-1" value="0" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																document.getElementById('sec6').style.display='initial';
+																															}">
+					      No
+					    </label>
+					  </div>
+					</div>
+
+					<!-- Multiple Radios (inline) -->
+					<div class="form-group">
+					  <label class="col-md-6 control-label" for="04-4">4.	Are you familiar with the national legislation that relates to disability service provision?</label>
+					  <div class="col-md-6">
+					    <label class="radio-inline" for="04-4-0">
+					      <input type="radio" name="04-4" id="04-4-0" value="10" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																document.getElementById('sec6').style.display='initial';
+																															}">
+					      Yes
+					    </label>
+					    <label class="radio-inline" for="04-4-1">
+					      <input type="radio" name="04-4" id="04-4-1" value="0" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																document.getElementById('sec6').style.display='initial';
+																															}">
+					      No
+					    </label>
+					  </div>
+					</div>
+
+					</fieldset>
+					</form>
+				</section>
+
+					<!--- Section 6 : Processes --->
+					<section id="sec6" style="display:none;">
+					<form class="form-horizontal text-center">
+						<fieldset>
+
+						<!-- Form Name -->
+						<legend>Section 6: Processes</legend>
+
+						<!-- Multiple Radios (inline) -->
+						<div class="form-group">
+						  <label class="col-md-6 control-label" for="05-0">1.	Do you engage with disability groups in your local community?</label>
+						  <div class="col-md-6">
+						    <label class="radio-inline" for="05-0-0">
+						      <input type="radio" name="05-0" id="05-0-0" value="10" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																	document.getElementById('sec7').style.display='initial';
+																																}">
+						      Yes
+						    </label>
+						    <label class="radio-inline" for="05-0-1">
+						      <input type="radio" name="05-0" id="05-0-1" value="0" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																	document.getElementById('sec7').style.display='initial';
+																																}">
+						      No
+						    </label>
+						  </div>
+						</div>
+
+						<!-- Multiple Radios (inline) -->
+						<div class="form-group">
+						  <label class="col-md-6 control-label" for="05-1">2.	Have you forged any alliance/partnership with any disability organisation?</label>
+						  <div class="col-md-6">
+						    <label class="radio-inline" for="05-1-0">
+						      <input type="radio" name="05-1" id="05-1-0" value="10" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																	document.getElementById('sec7').style.display='initial';
+																																}">
+						      Yes
+						    </label>
+						    <label class="radio-inline" for="05-1-1">
+						      <input type="radio" name="05-1" id="05-1-1" value="0" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																	document.getElementById('sec7').style.display='initial';
+																																}">
+						      No
+						    </label>
+						  </div>
+						</div>
+
+						<!-- Multiple Radios (inline) -->
+						<div class="form-group">
+						  <label class="col-md-6 control-label" for="05-2">3.	Have you or your staff embraced any assistive technologies (E.g. Assist-Mi app)?</label>
+						  <div class="col-md-6">
+						    <label class="radio-inline" for="05-2-0">
+						      <input type="radio" name="05-2" id="05-2-0" value="10" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																	document.getElementById('sec7').style.display='initial';
+																																}">
+						      Yes
+						    </label>
+						    <label class="radio-inline" for="05-2-1">
+						      <input type="radio" name="05-2" id="05-2-1" value="0" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																	document.getElementById('sec7').style.display='initial';
+																																}">
+						      No
+						    </label>
+						  </div>
+						</div>
+
+						<!-- Multiple Radios (inline) -->
+						<div class="form-group">
+						  <label class="col-md-6 control-label" for="05-3">4.	Have you or your colleagues undertaken any research on Inclusivizing your service?</label>
+						  <div class="col-md-6">
+						    <label class="radio-inline" for="05-3-0">
+						      <input type="radio" name="05-3" id="05-3-0" value="10" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																	document.getElementById('sec7').style.display='initial';
+																																}">
+						      Yes
+						    </label>
+						    <label class="radio-inline" for="05-3-1">
+						      <input type="radio" name="05-3" id="05-3-1" value="0" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																	document.getElementById('sec7').style.display='initial';
+																																}">
+						      No
+						    </label>
+						  </div>
+						</div>
+
+						<!-- Multiple Radios (inline) -->
+						<div class="form-group">
+						  <label class="col-md-6 control-label" for="05-4">5.	Do you encourage your staff to engage in customer satisfaction conversations with different user groups?</label>
+						  <div class="col-md-6">
+						    <label class="radio-inline" for="05-4-0">
+						      <input type="radio" name="05-4" id="05-4-0" value="10" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																	document.getElementById('sec7').style.display='initial';
+																																}">
+						      Yes
+						    </label>
+						    <label class="radio-inline" for="05-4-1">
+						      <input type="radio" name="05-4" id="05-4-1" value="0" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																	document.getElementById('sec7').style.display='initial';
+																																}">
+						      No
+						    </label>
+						  </div>
+						</div>
+
+						</fieldset>
+						</form>
+					</section>
+
+
+						<!--- Section 7 Perception -->
+						<section id="sec7" style="display:none;">
+						<form class="form-horizontal text-center">
+							<fieldset>
+
+							<!-- Form Name -->
+							<legend>Section 7: Perception </legend>
+
+							<!-- Multiple Radios (inline) -->
+							<div class="form-group">
+							  <label class="col-md-6 control-label" for="06-0">1.	Do you gather information from your users on their beliefs about fitness being a fundamental right for all?</label>
+							  <div class="col-md-6">
+							    <label class="radio-inline" for="06-0-0">
+							      <input type="radio" name="06-0" id="06-0-0" value="10" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																		document.getElementById('sec8').style.display='initial';
+																																	}">
+							      Yes
+							    </label>
+							    <label class="radio-inline" for="06-0-1">
+							      <input type="radio" name="06-0" id="06-0-1" value="0" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																		document.getElementById('sec8').style.display='initial';
+																																	}">
+							      No
+							    </label>
+							  </div>
+							</div>
+
+							<!-- Multiple Radios (inline) -->
+							<div class="form-group">
+							  <label class="col-md-6 control-label" for="06-1">2.	Do you gather information from people who do NOT use your facility on fitness being a fundamental right for all?</label>
+							  <div class="col-md-6">
+							    <label class="radio-inline" for="06-1-0">
+							      <input type="radio" name="06-1" id="06-1-0" value="10"  onclick="radioOnClick(this); if(isAllChecked(this)){
+																																		document.getElementById('sec8').style.display='initial';
+																																	}">
+							      Yes
+							    </label>
+							    <label class="radio-inline" for="06-1-1">
+							      <input type="radio" name="06-1" id="06-1-1" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																		document.getElementById('sec8').style.display='initial';
+																																	}">
+							      No
+							    </label>
+							  </div>
+							</div>
+
+							</fieldset>
+						</form>w
+						</section>
+
+
+							<!--- Section 8 Programmes -->
+							<section id="sec8" style="display:none;">
+							<form class="form-horizontal text-center">
+								<fieldset>
+
+								<!-- Form Name -->
+								<legend>Section 8: Programmes </legend>
+
+								<div class ="container-fluid">
+						      <h1>This section refers to programmes that you deliver, or support delivery of, to consciously inclusivize your services</h1>
+						    </div>
+
+								<!-- Multiple Radios (inline) -->
+								<div class="form-group">
+								  <label class="col-md-6 control-label" for="q1">1.	Do you and your staff provide programmes specifically for people with disabilities?</label>
+								  <div class="col-md-6">
+								    <label class="radio-inline" for="q1-0">
+								      <input type="radio" name="q1" id="q1-0" value="1" onclick="document.getElementById('sec8-1').style.display='initial';
+																																								 document.getElementById('q2').style.display='initial';">
+								      Yes
+									    </label>
+									    <label class="radio-inline" for="q1-1">
+									      <input type="radio" name="q1" id="q1-1" value="0" onclick="document.getElementById('q2').style.display='initial';
+																																									 document.getElementById('sec8-1').style.display='none';
+
+																																									answerArray[7][0] = 0;		//reset the score to 0
+
+																																									var checkBoxes = document.getElementsByName('07-0');
+
+																																									for(var i = 0, n = checkBoxes.length;i<n;i++){
+																																										checkBoxes[i].checked = false;		//uncheck all the checkbox
+																																									}"																																									>
+									      No
+									    </label>
+									  </div>
+									</div>
+
+									<!-- Multiple Radios (inline) -->
+									<div class="form-group" id="sec8-1" style="display:none;">
+										<table class="col-md-6 table table-bordered table-hover" >
+											<tr>
+												<th>Disability Category</th>
+												<th colspan="2">Yes</th>
+											</tr>
+
+											<tr>
+												<td></td>
+												<td></td>
+												<td>Type(Segregated or integrated)</td>
+											</tr>
+
+											<tr>
+												<td>Physical disabilities</td>
+												<td><input type="checkbox" name="07-0" id="07-0-1" value="10" onclick="checkBoxOnClick(this)"></td>
+												<td><select name="type">
+															<option value ="Segregated">Segregated</option>
+															<option value="Integrated">Integrated</option>
+														</select>
+												</td>
+											</tr>
+
+											<tr>
+												<td>Intellectual disabilities</td>
+												<td><input type="checkbox" name="07-0" id="07-0-2" value="10" onclick="checkBoxOnClick(this)"></td>
+												<td><select name="type">
+															<option value ="Segregated">Segregated</option>
+															<option value="Integrated">Integrated</option>
+														</select>
+												</td>
+											</tr>
+
+											<tr>
+												<td>Sensory disabilities</td>
+												<td><input type="checkbox" name="07-0" id="07-0-3" value="10" onclick="checkBoxOnClick(this)"></td>
+												<td><select name="type">
+															<option value ="Segregated">Segregated</option>
+															<option value="Integrated">Integrated</option>
+														</select>
+												</td>
+											</tr>
+
+											<tr>
+												<td>Mental health disabilities</td>
+												<td><input type="checkbox" name="07-0" id="07-0-4" value="10" onclick="checkBoxOnClick(this)"></td>
+												<td><select name="type">
+															<option value ="Segregated">Segregated</option>
+															<option value="Integrated">Integrated</option>
+														</select>
+												</td>
+											</tr>
+										</table>
+
+									</div>
+
+									<!-- Multiple Radios (inline) -->
+									<div class="form-group" id="q2" style="display:none;">
+									  <label class="col-md-6 control-label" for="q2">2.	Do people with disabilities use the gym, pool, or participate in group activities etc. alongside other members? </label>
+									  <div class="col-md-6">
+									    <label class="radio-inline" for="q2-0">
+									      <input type="radio" name="q2" id="q2-0" value="1" onclick="document.getElementById('sec8-2').style.display='initial';
+																																									 document.getElementById('sec9').style.display='initial';">
+									      Yes
+									    </label>
+									    <label class="radio-inline" for="q2-1">
+									      <input type="radio" name="q2" id="q2-1" value="0" onclick="document.getElementById('sec9').style.display='initial';
+																																									 document.getElementById('sec8-2').style.display='none';
+
+																																									answerArray[7][1] = 0;		//reset the score to 0
+
+																																									var checkBoxes = document.getElementsByName('07-1');
+
+																																									for(var i = 0, n = checkBoxes.length;i<n;i++){
+																																										checkBoxes[i].checked = false;		//uncheck all the checkbox
+																																									}">
+									      No
+									    </label>
+									  </div>
+									</div>
+
+									<!-- Multiple Radios (inline) -->
+									<div class="form-group" id="sec8-2" style="display:none;">
+										<table class="col-md-6 table table-bordered table-hover">
+											<tr>
+												<th>Disability Category</th>
+												<th>Yes</th>
+											</tr>
+
+											<tr>
+												<td>Physical disabilities</td>
+												<td><input type="checkbox" name="07-1" id="07-1-0" value="10" onclick="checkBoxOnClick(this)"></td>
+											</tr>
+
+											<tr>
+												<td>Intellectual disabilities</td>
+												<td><input type="checkbox" name="07-1" id="07-1-1" value="10" onclick="checkBoxOnClick(this)"></td>
+											</tr>
+
+											<tr>
+												<td>Sensory disabilities</td>
+												<td><input type="checkbox" name="07-1" id="07-1-2" value="10" onclick="checkBoxOnClick(this)"></td>
+											</tr>
+
+											<tr>
+												<td>Mental health disabilities</td>
+												<td><input type="checkbox" name="07-1" id="07-1-3" value="10" onclick="checkBoxOnClick(this)"></td>
+											</tr>
+										</table>
+
+									</div>
+
+									</fieldset>
+									</form>
+								</section>
+
+
+								<!---Seciton 9 : People --->
+								<section id="sec9" style="display:none;">
+								<form class="form-horizontal text-center">
+									<fieldset>
+
+									<!-- Form Name -->
+									<legend>Section 9: People</legend>
+
+
+									<h1>1.	Have you or any of your staff/volunteers had training that facilitates the inclusion of people with disabilities?</h1>
+									<!-- Multiple Radios (inline) -->
+									<div class="form-group">
+									  <label class="col-md-6 control-label" for="08-0">a.	Operational (teaching/instructional staff)</label>
+									  <div class="col-md-6">
+									    <label class="radio-inline" for="08-0-0">
+									      <input type="radio" name="08-0" id="08-0-0" value="10" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																				document.getElementById('sec10').style.display='initial';
+																																			}">
+									      Yes
+									    </label>
+									    <label class="radio-inline" for="08-0-1">
+									      <input type="radio" name="08-0" id="08-0-1" value="0" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																				document.getElementById('sec10').style.display='initial';
+																																			}">
+									      No
+									    </label>
+									  </div>
+									</div>
+
+									<!-- Multiple Radios (inline) -->
+									<div class="form-group">
+									  <label class="col-md-6 control-label" for="08-1">b.	Management </label>
+									  <div class="col-md-6">
+									    <label class="radio-inline" for="08-1-0">
+									      <input type="radio" name="08-1" id="08-1-0" value="10" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																				document.getElementById('sec10').style.display='initial';
+																																			}">
+									      Yes
+									    </label>
+									    <label class="radio-inline" for="08-1-1">
+									      <input type="radio" name="08-1" id="08-1-1" value="0" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																				document.getElementById('sec10').style.display='initial';
+																																			}">
+									      No
+									    </label>
+									  </div>
+									</div>
+
+									<!-- Multiple Radios (inline) -->
+									<div class="form-group">
+									  <label class="col-md-6 control-label" for="08-2">c.	Front of house </label>
+									  <div class="col-md-6">
+									    <label class="radio-inline" for="08-2-0">
+									      <input type="radio" name="08-2" id="08-2-0" value="10" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																				document.getElementById('sec10').style.display='initial';
+																																			}">
+									      Yes
+									    </label>
+									    <label class="radio-inline" for="08-2-1">
+									      <input type="radio" name="08-2" id="08-2-1" value="0" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																				document.getElementById('sec10').style.display='initial';
+																																			}">
+									      No
+									    </label>
+									  </div>
+									</div>
+
+									<!-- Multiple Radios (inline) -->
+									<div class="form-group">
+									  <label class="col-md-6 control-label" for="08-3">d.	Stakeholders/ contracted staff </label>
+									  <div class="col-md-6">
+									    <label class="radio-inline" for="08-3-0">
+									      <input type="radio" name="08-3" id="08-3-0" value="10" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																				document.getElementById('sec10').style.display='initial';
+																																			}">
+									      Yes
+									    </label>
+									    <label class="radio-inline" for="08-3-1">
+									      <input type="radio" name="08-3" id="08-3-1" value="0" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																				document.getElementById('sec10').style.display='initial';
+																																			}">
+									      No
+									    </label>
+									  </div>
+									</div>
+
+									<!-- Multiple Radios (inline) -->
+									<div class="form-group">
+									  <label class="col-md-6 control-label" for="08-4">2.	Are people with disabilities employed by your organisation and/or represented on your steering committee/ management committee/ board of management etc.?	</label>
+									  <div class="col-md-6">
+									    <label class="radio-inline" for="08-4-0">
+									      <input type="radio" name="08-4" id="08-4-0" value="10" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																				document.getElementById('sec10').style.display='initial';
+																																			}">
+									      Yes
+									    </label>
+									    <label class="radio-inline" for="08-4-1">
+									      <input type="radio" name="08-4" id="08-4-1" value="0" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																				document.getElementById('sec10').style.display='initial';
+																																			}">
+									      No
+									    </label>
+									  </div>
+									</div>
+
+									<!-- Multiple Radios (inline) -->
+									<div class="form-group">
+									  <label class="col-md-6 control-label" for="08-5">3.	Is there a member of staff allocated as a liaison/point person for customers with disabilities? </label>
+									  <div class="col-md-6">
+									    <label class="radio-inline" for="08-5-0">
+									      <input type="radio" name="08-5" id="08-5-0" value="10" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																				document.getElementById('sec10').style.display='initial';
+																																			}">
+									      Yes
+									    </label>
+									    <label class="radio-inline" for="08-5-1">
+									      <input type="radio" name="08-5" id="08-5-1" value="0" onclick="radioOnClick(this); if(isAllChecked(this)){
+																																				document.getElementById('sec10').style.display='initial';
+																																			}">
+									      No
+									    </label>
+									  </div>
+									</div>
+
+									</fieldset>
+									</form>
+								</section>
+
+								<!---Section 10 Physical Access/Place --->
+								<section id="sec10" style="display:none;">
+									<form class="form-horizontal text-center">
+										<fieldset>
+
+										<!-- Form Name -->
+										<legend>Section 10: Physical Access/Place </legend>
+
+										<!-- Multiple Radios (inline) -->
+										<div class="form-group">
+										  <label class="col-md-6 control-label" for="09-0">1.	Have you or your colleagues carried out an audit to evaluate the UniversAbility  of your facility                      </label>
+										  <div class="col-md-6">
+										    <label class="radio-inline" for="09-0-0">
+										      <input type="radio" name="09-0" id="09-0-0" value="10" onclick="radioOnClick(this); document.getElementById('sec11').style.display='initial';">
+										      Yes
+										    </label>
+										    <label class="radio-inline" for="09-0-1">
+										      <input type="radio" name="09-0" id="09-0-1" value="0" onclick="radioOnClick(this); document.getElementById('sec11').style.display='initial';">
+										      No
+										    </label>
+										  </div>
+										</div>
+
+										<!-- Multiple Checkboxes (inline) -->
+										<div class="form-group">
+											<table class="col-md-6 table table-bordered table-hover">
+												<tr>
+													<th>Disability Category</th>
+													<th>Yes</th>
+												</tr>
+
+												<tr>
+													<td>Physical disabilities</td>
+													<td><input type="checkbox" name="09-1" id="09-1-0" value="10" onclick="checkBoxOnClick(this)"></td>
+												</tr>
+
+												<tr>
+													<td>Intellectual disabilities</td>
+													<td><input type="checkbox" name="09-1" id="09-1-1" value="10" onclick="checkBoxOnClick(this)"></td>
+												</tr>
+
+												<tr>
+													<td>Sensory disabilities</td>
+													<td><input type="checkbox" name="09-1" id="09-1-2" value="10" onclick="checkBoxOnClick(this)"></td>
+												</tr>
+
+												<tr>
+													<td>Mental health disabilities</td>
+													<td><input type="checkbox" name="09-1" id="09-1-3" value="10" onclick="checkBoxOnClick(this)"></td>
+												</tr>
+											</table>
+
+										</div>
+
+										</fieldset>
+										</form>
+									</section>
+
+
+									<!--- Section 11:Promotion --->
+									<section id="sec11" style="display:none;">
+										<form class="form-horizontal text-center">
+											<fieldset>
+
+											<!-- Form Name -->
+											<legend>Section 11: Promotion</legend>
+
+											<!-- Multiple Radios (inline) -->
+											<div class="form-group">
+											  <label class="col-md-6 control-label" for="10-0">1.	Is your promotional material inclusive of people with disabilities?	</label>
+											  <div class="col-md-6">
+											    <label class="radio-inline" for="10-0-0">
+											      <input type="radio" name="10-0" id="10-0-0" value="10" onclick="radioOnClick(this);">
+											      Yes
+											    </label>
+											    <label class="radio-inline" for="10-0-1">
+											      <input type="radio" name="10-0" id="10-0-1" value="0" onclick="radioOnClick(this);">
+											      No
+											    </label>
+											  </div>
+											</div>
+
+											<!-- Multiple Radios (inline) -->
+											<div class="form-group">
+											  <label class="col-md-6 control-label" for="10-1">2.	Have you or your colleagues/staff developed any promotional materials with the aim of attracting people with disabilities? </label>
+											  <div class="col-md-6">
+											    <label class="radio-inline" for="10-1-0">
+											      <input type="radio" name="10-1" id="10-1-0" value="10" onclick="radioOnClick(this);">
+											      Yes
+											    </label>
+											    <label class="radio-inline" for="10-1-1">
+											      <input type="radio" name="10-1" id="10-1-1" value="0" onclick="radioOnClick(this);">
+											      No
+											    </label>
+											  </div>
+											</div>
+
+											</fieldset>
+											</form>
+
+									</section>
+
+		</div>
+
+		<script type="text/javascript">
+
+			var answerArray = [	[0,0,0,0], //section 1
+								[0,0,0,0,0],	//section 2
+								[0,0],		//section 3
+								[0,0],		//section 4
+								[0,0,0,0,0],	//section 5
+								[0,0,0,0,0],	//section 6
+								[0,0],	//section 7
+								[0,0],	//section 8
+								[0,0,0,0,0,0],//section 9
+								[0,0],//section 10
+								[0,0]//section 11
+							];
+
+
+			//timeout timer
+			function timerCountDown(){
+				setTimeout(stopAll,600000)//10 minutes
+			}
+
+			function stopAll(){
+				if(!alert('Your session has timeout after 10 min')){window.location.reload();}
+			}
+
+			function radioOnClick(passIn){
+				var inputName = passIn.name;
+				var answerRow = inputName.substring(0,2);
+				var answerCol = inputName.substring(3,4);
+
+				answerArray[parseInt(answerRow,10)][parseInt(answerCol,10)] = parseInt(passIn.value,10);
+			}
+
+			function checkBoxOnClick(passIn){
+				var inputName = passIn.name;
+				var answerRow = inputName.substring(0,2);
+				var answerCol = inputName.substring(3,4);
+
+				//deduct the score if is uncheecked , add the score if its is checked
+				if(passIn.checked){
+					answerArray[parseInt(answerRow,10)][parseInt(answerCol,10)] += parseInt(passIn.value,10);
+				}
+				else{
+					answerArray[parseInt(answerRow,10)][parseInt(answerCol,10)] -= parseInt(passIn.value,10);
+				}
+
+			}
+
+			//this function check if all the required question is answered
+			function isAllChecked(passIn){
+				var inputName = passIn.name;
+				var answerRow = parseInt(inputName.substring(0,2),10);
+				var displayNext = true;
+				for(var i = 0 ; i < answerArray[answerRow].length ; i++){
+					if(answerArray[answerRow][i] == 0 ){
+						displayNext = false;
+						break;
+					}
+				}
+
+				return displayNext;
+			}
+
+			//this function check if one of the question is answered
+			function oneIsChecked(passIn){
+				var group = document.getElementsByName(passIn.name);	//get the whole group of the input
+				var displayNext = false;
+				for(var i = 0 ; i < group.length ; i++){
+					if(group[i].checked){
+						displayNext = true;
+						break;
+					}
+				}
+
+				return displayNext;
+			}
+
+			var insdel = function(chk) {
+			  console.log(chk.value, chk.checked, chk.id);
+			  if (chk.checked) {
+			    console.log('insert ', chk.value);
+			    //do the rest
+			  } else {
+			    console.log('delete ', chk.value);
+			    //do the rest
+			  }
+			  //do the rest
+		};
+
+		</script>
+	</body>
+
+</html>
